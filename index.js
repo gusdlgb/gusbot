@@ -33,19 +33,18 @@ client.on("guildMemberRemove", (member) => {
 
 client.on('message', (message) => {
   if(message.author.bot) return;
-
   if(message.content == '안녕') {
     return message.reply('안녕하세요!');
-  };
+  }
   if(message.content == '구하') {
     return message.reply('구하 반갑습니다!');
-  };
+  }
   if(message.content == '하이') {
     return message.reply('나한테하이라고하는군 어리석은 인간들');
-  };
+  }
   if(message.content == 'ping') {
     return message.reply('pong');
-  };
+  }
 
   if(message.content == '!si') {
     let embed = new Discord.RichEmbed()
